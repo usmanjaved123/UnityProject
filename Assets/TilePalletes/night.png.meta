@@ -1,0 +1,2650 @@
+fileFormatVersion: 2
+guid: 9455d4ab20af5884d806a8959ebb6cff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: night_0
+  - first:
+      213: 21300002
+    second: night_1
+  - first:
+      213: 21300004
+    second: night_2
+  - first:
+      213: 21300006
+    second: night_3
+  - first:
+      213: 21300008
+    second: night_4
+  - first:
+      213: 21300010
+    second: night_5
+  - first:
+      213: 21300012
+    second: night_6
+  - first:
+      213: 21300014
+    second: night_7
+  - first:
+      213: 21300016
+    second: night_8
+  - first:
+      213: 21300018
+    second: night_9
+  - first:
+      213: 21300020
+    second: night_10
+  - first:
+      213: 21300022
+    second: night_11
+  - first:
+      213: 21300024
+    second: night_12
+  - first:
+      213: 21300026
+    second: night_13
+  - first:
+      213: 21300028
+    second: night_14
+  - first:
+      213: 21300030
+    second: night_15
+  - first:
+      213: 21300032
+    second: night_16
+  - first:
+      213: 21300034
+    second: night_17
+  - first:
+      213: 21300036
+    second: night_18
+  - first:
+      213: 21300038
+    second: night_19
+  - first:
+      213: 21300040
+    second: night_20
+  - first:
+      213: 21300042
+    second: night_21
+  - first:
+      213: 21300044
+    second: night_22
+  - first:
+      213: 21300046
+    second: night_23
+  - first:
+      213: 21300048
+    second: night_24
+  - first:
+      213: 21300050
+    second: night_25
+  - first:
+      213: 21300052
+    second: night_26
+  - first:
+      213: 21300054
+    second: night_27
+  - first:
+      213: 21300056
+    second: night_28
+  - first:
+      213: 21300058
+    second: night_29
+  - first:
+      213: 21300060
+    second: night_30
+  - first:
+      213: 21300062
+    second: night_31
+  - first:
+      213: 21300064
+    second: night_32
+  - first:
+      213: 21300066
+    second: night_33
+  - first:
+      213: 21300068
+    second: night_34
+  - first:
+      213: 21300070
+    second: night_35
+  - first:
+      213: 21300072
+    second: night_36
+  - first:
+      213: 21300074
+    second: night_37
+  - first:
+      213: 21300076
+    second: night_38
+  - first:
+      213: 21300078
+    second: night_39
+  - first:
+      213: 21300080
+    second: night_40
+  - first:
+      213: 21300082
+    second: night_41
+  - first:
+      213: 21300084
+    second: night_42
+  - first:
+      213: 21300086
+    second: night_43
+  - first:
+      213: 21300088
+    second: night_44
+  - first:
+      213: 21300090
+    second: night_45
+  - first:
+      213: 21300092
+    second: night_46
+  - first:
+      213: 21300094
+    second: night_47
+  - first:
+      213: 21300096
+    second: night_48
+  - first:
+      213: 21300098
+    second: night_49
+  - first:
+      213: 21300100
+    second: night_50
+  - first:
+      213: 21300102
+    second: night_51
+  - first:
+      213: 21300104
+    second: night_52
+  - first:
+      213: 21300106
+    second: night_53
+  - first:
+      213: 21300108
+    second: night_54
+  - first:
+      213: 21300110
+    second: night_55
+  - first:
+      213: 21300112
+    second: night_56
+  - first:
+      213: 21300114
+    second: night_57
+  - first:
+      213: 21300116
+    second: night_58
+  - first:
+      213: 21300118
+    second: night_59
+  - first:
+      213: 21300120
+    second: night_60
+  - first:
+      213: 21300122
+    second: night_61
+  - first:
+      213: 21300124
+    second: night_62
+  - first:
+      213: 21300126
+    second: night_63
+  - first:
+      213: 21300128
+    second: night_64
+  - first:
+      213: 21300130
+    second: night_65
+  - first:
+      213: 21300132
+    second: night_66
+  - first:
+      213: 21300134
+    second: night_67
+  - first:
+      213: 21300136
+    second: night_68
+  - first:
+      213: 21300138
+    second: night_69
+  - first:
+      213: 21300140
+    second: night_70
+  - first:
+      213: 21300142
+    second: night_71
+  - first:
+      213: 21300144
+    second: night_72
+  - first:
+      213: 21300146
+    second: night_73
+  - first:
+      213: 21300148
+    second: night_74
+  - first:
+      213: 21300150
+    second: night_75
+  - first:
+      213: 21300152
+    second: night_76
+  - first:
+      213: 21300154
+    second: night_77
+  - first:
+      213: 21300156
+    second: night_78
+  - first:
+      213: 21300158
+    second: night_79
+  - first:
+      213: 21300160
+    second: night_80
+  - first:
+      213: 21300162
+    second: night_81
+  - first:
+      213: 21300164
+    second: night_82
+  - first:
+      213: 21300166
+    second: night_83
+  - first:
+      213: 21300168
+    second: night_84
+  - first:
+      213: 21300170
+    second: night_85
+  - first:
+      213: 21300172
+    second: night_86
+  - first:
+      213: 21300174
+    second: night_87
+  - first:
+      213: 21300176
+    second: night_88
+  - first:
+      213: 21300178
+    second: night_89
+  - first:
+      213: 21300180
+    second: night_90
+  - first:
+      213: 21300182
+    second: night_91
+  - first:
+      213: 21300184
+    second: night_92
+  - first:
+      213: 21300186
+    second: night_93
+  - first:
+      213: 21300188
+    second: night_94
+  - first:
+      213: 21300190
+    second: night_95
+  - first:
+      213: 21300192
+    second: night_96
+  - first:
+      213: 21300194
+    second: night_97
+  - first:
+      213: 21300196
+    second: night_98
+  - first:
+      213: 21300198
+    second: night_99
+  - first:
+      213: 21300200
+    second: night_100
+  - first:
+      213: 21300202
+    second: night_101
+  - first:
+      213: 21300204
+    second: night_102
+  - first:
+      213: 21300206
+    second: night_103
+  - first:
+      213: 21300208
+    second: night_104
+  - first:
+      213: 21300210
+    second: night_105
+  - first:
+      213: 21300212
+    second: night_106
+  - first:
+      213: 21300214
+    second: night_107
+  - first:
+      213: 21300216
+    second: night_108
+  - first:
+      213: 21300218
+    second: night_109
+  - first:
+      213: 21300220
+    second: night_110
+  - first:
+      213: 21300222
+    second: night_111
+  - first:
+      213: 21300224
+    second: night_112
+  - first:
+      213: 21300226
+    second: night_113
+  - first:
+      213: 21300228
+    second: night_114
+  - first:
+      213: 21300230
+    second: night_115
+  - first:
+      213: 21300232
+    second: night_116
+  - first:
+      213: 21300234
+    second: night_117
+  - first:
+      213: 21300236
+    second: night_118
+  - first:
+      213: 21300238
+    second: night_119
+  - first:
+      213: 21300240
+    second: night_120
+  - first:
+      213: 21300242
+    second: night_121
+  - first:
+      213: 21300244
+    second: night_122
+  - first:
+      213: 21300246
+    second: night_123
+  - first:
+      213: 21300248
+    second: night_124
+  - first:
+      213: 21300250
+    second: night_125
+  - first:
+      213: 21300252
+    second: night_126
+  - first:
+      213: 21300254
+    second: night_127
+  - first:
+      213: 21300256
+    second: night_128
+  - first:
+      213: 21300258
+    second: night_129
+  - first:
+      213: 21300260
+    second: night_130
+  - first:
+      213: 21300262
+    second: night_131
+  - first:
+      213: 21300264
+    second: night_132
+  - first:
+      213: 21300266
+    second: night_133
+  - first:
+      213: 21300268
+    second: night_134
+  - first:
+      213: 21300270
+    second: night_135
+  - first:
+      213: 21300272
+    second: night_136
+  - first:
+      213: 21300274
+    second: night_137
+  - first:
+      213: 21300276
+    second: night_138
+  - first:
+      213: 21300278
+    second: night_139
+  - first:
+      213: 21300280
+    second: night_140
+  - first:
+      213: 21300282
+    second: night_141
+  - first:
+      213: 21300284
+    second: night_142
+  - first:
+      213: 21300286
+    second: night_143
+  - first:
+      213: 21300288
+    second: night_144
+  - first:
+      213: 21300290
+    second: night_145
+  - first:
+      213: 21300292
+    second: night_146
+  - first:
+      213: 21300294
+    second: night_147
+  - first:
+      213: 21300296
+    second: night_148
+  - first:
+      213: 21300298
+    second: night_149
+  - first:
+      213: 21300300
+    second: night_150
+  - first:
+      213: 21300302
+    second: night_151
+  - first:
+      213: 21300304
+    second: night_152
+  - first:
+      213: 21300306
+    second: night_153
+  - first:
+      213: 21300308
+    second: night_154
+  - first:
+      213: 21300310
+    second: night_155
+  - first:
+      213: 21300312
+    second: night_156
+  - first:
+      213: 21300314
+    second: night_157
+  - first:
+      213: 21300316
+    second: night_158
+  - first:
+      213: 21300318
+    second: night_159
+  - first:
+      213: 21300320
+    second: night_160
+  - first:
+      213: 21300322
+    second: night_161
+  - first:
+      213: 21300324
+    second: night_162
+  - first:
+      213: 21300326
+    second: night_163
+  - first:
+      213: 21300328
+    second: night_164
+  - first:
+      213: 21300330
+    second: night_165
+  - first:
+      213: 21300332
+    second: night_166
+  - first:
+      213: 21300334
+    second: night_167
+  - first:
+      213: 21300336
+    second: night_168
+  - first:
+      213: 21300338
+    second: night_169
+  - first:
+      213: 21300340
+    second: night_170
+  - first:
+      213: 21300342
+    second: night_171
+  - first:
+      213: 21300344
+    second: night_172
+  - first:
+      213: 21300346
+    second: night_173
+  - first:
+      213: 21300348
+    second: night_174
+  - first:
+      213: 21300350
+    second: night_175
+  - first:
+      213: 21300352
+    second: night_176
+  - first:
+      213: 21300354
+    second: night_177
+  - first:
+      213: 21300356
+    second: night_178
+  - first:
+      213: 21300358
+    second: night_179
+  - first:
+      213: 21300360
+    second: night_180
+  - first:
+      213: 21300362
+    second: night_181
+  - first:
+      213: 21300364
+    second: night_182
+  - first:
+      213: 21300366
+    second: night_183
+  - first:
+      213: 21300368
+    second: night_184
+  - first:
+      213: 21300370
+    second: night_185
+  - first:
+      213: 21300372
+    second: night_186
+  - first:
+      213: 21300374
+    second: night_187
+  - first:
+      213: 21300376
+    second: night_188
+  - first:
+      213: 21300378
+    second: night_189
+  - first:
+      213: 21300380
+    second: night_190
+  - first:
+      213: 21300382
+    second: night_191
+  - first:
+      213: 21300384
+    second: night_192
+  - first:
+      213: 21300386
+    second: night_193
+  - first:
+      213: 21300388
+    second: night_194
+  - first:
+      213: 21300390
+    second: night_195
+  - first:
+      213: 21300392
+    second: night_196
+  - first:
+      213: 21300394
+    second: night_197
+  - first:
+      213: 21300396
+    second: night_198
+  - first:
+      213: 21300398
+    second: night_199
+  - first:
+      213: 21300400
+    second: night_200
+  - first:
+      213: 21300402
+    second: night_201
+  - first:
+      213: 21300404
+    second: night_202
+  - first:
+      213: 21300406
+    second: night_203
+  - first:
+      213: 21300408
+    second: night_204
+  - first:
+      213: 21300410
+    second: night_205
+  - first:
+      213: 21300412
+    second: night_206
+  - first:
+      213: 21300414
+    second: night_207
+  - first:
+      213: 21300416
+    second: night_208
+  - first:
+      213: 21300418
+    second: night_209
+  - first:
+      213: 21300420
+    second: night_210
+  - first:
+      213: 21300422
+    second: night_211
+  - first:
+      213: 21300424
+    second: night_212
+  - first:
+      213: 21300426
+    second: night_213
+  - first:
+      213: 21300428
+    second: night_214
+  - first:
+      213: 21300430
+    second: night_215
+  - first:
+      213: 21300432
+    second: night_216
+  - first:
+      213: 21300434
+    second: night_217
+  - first:
+      213: 21300436
+    second: night_218
+  - first:
+      213: 21300438
+    second: night_219
+  - first:
+      213: 21300440
+    second: night_220
+  - first:
+      213: 21300442
+    second: night_221
+  - first:
+      213: 21300444
+    second: night_222
+  - first:
+      213: 21300446
+    second: night_223
+  - first:
+      213: 21300448
+    second: night_224
+  - first:
+      213: 21300450
+    second: night_225
+  - first:
+      213: 21300452
+    second: night_226
+  - first:
+      213: 21300454
+    second: night_227
+  - first:
+      213: 21300456
+    second: night_228
+  - first:
+      213: 21300458
+    second: night_229
+  - first:
+      213: 21300460
+    second: night_230
+  - first:
+      213: 21300462
+    second: night_231
+  - first:
+      213: 21300464
+    second: night_232
+  - first:
+      213: 21300466
+    second: night_233
+  - first:
+      213: 21300468
+    second: night_234
+  - first:
+      213: 21300470
+    second: night_235
+  - first:
+      213: 21300472
+    second: night_236
+  - first:
+      213: 21300474
+    second: night_237
+  - first:
+      213: 21300476
+    second: night_238
+  - first:
+      213: 21300478
+    second: night_239
+  - first:
+      213: 21300480
+    second: night_240
+  - first:
+      213: 21300482
+    second: night_241
+  - first:
+      213: 21300484
+    second: night_242
+  - first:
+      213: 21300486
+    second: night_243
+  - first:
+      213: 21300488
+    second: night_244
+  - first:
+      213: 21300490
+    second: night_245
+  - first:
+      213: 21300492
+    second: night_246
+  - first:
+      213: 21300494
+    second: night_247
+  - first:
+      213: 21300496
+    second: night_248
+  - first:
+      213: 21300498
+    second: night_249
+  - first:
+      213: 21300500
+    second: night_250
+  - first:
+      213: 21300502
+    second: night_251
+  - first:
+      213: 21300504
+    second: night_252
+  - first:
+      213: 21300506
+    second: night_253
+  - first:
+      213: 21300508
+    second: night_254
+  - first:
+      213: 21300510
+    second: night_255
+  - first:
+      213: 21300512
+    second: night_256
+  - first:
+      213: 21300514
+    second: night_257
+  - first:
+      213: 21300516
+    second: night_258
+  - first:
+      213: 21300518
+    second: night_259
+  - first:
+      213: 21300520
+    second: night_260
+  - first:
+      213: 21300522
+    second: night_261
+  - first:
+      213: 21300524
+    second: night_262
+  - first:
+      213: 21300526
+    second: night_263
+  - first:
+      213: 21300528
+    second: night_264
+  - first:
+      213: 21300530
+    second: night_265
+  - first:
+      213: 21300532
+    second: night_266
+  - first:
+      213: 21300534
+    second: night_267
+  - first:
+      213: 21300536
+    second: night_268
+  - first:
+      213: 21300538
+    second: night_269
+  - first:
+      213: 21300540
+    second: night_270
+  - first:
+      213: 21300542
+    second: night_271
+  - first:
+      213: 21300544
+    second: night_272
+  - first:
+      213: 21300546
+    second: night_273
+  - first:
+      213: 21300548
+    second: night_274
+  - first:
+      213: 21300550
+    second: night_275
+  - first:
+      213: 21300552
+    second: night_276
+  - first:
+      213: 21300554
+    second: night_277
+  - first:
+      213: 21300556
+    second: night_278
+  - first:
+      213: 21300558
+    second: night_279
+  - first:
+      213: 21300560
+    second: night_280
+  - first:
+      213: 21300562
+    second: night_281
+  - first:
+      213: 21300564
+    second: night_282
+  - first:
+      213: 21300566
+    second: night_283
+  - first:
+      213: 21300568
+    second: night_284
+  - first:
+      213: 21300570
+    second: night_285
+  - first:
+      213: 21300572
+    second: night_286
+  - first:
+      213: 21300574
+    second: night_287
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: night_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b95ff7236b3bc43a2bed5ac89874a1
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812defcf804d4ab43893a3610b07d3c6
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d02a4715714884daccd230dbecd6e2
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765cfdc7c4337794ea59a868ff801b3b
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fd0f091402de84d9d8e431549f7ca1
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce1142d4b2d278418cde5d61d3807be
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe797e50b835bb54db1d786b72152f67
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea41d6be4e62144681ac0dfbc872fc0
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a2186618323d24cbcaea97a5915a4c
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb91f8c1f1cff84fa7b0d1dd0457898
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4684af0d98b796438b1dc7aeb50ae88
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b73b1c0dcd3ca14fa123bcb454deb71
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a163a06b5aa1b46b67178d162b297b
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072a738aea095614dad6b38a214a670c
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bc932744bf94e42a718f973dd4e68a
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6837c2cdf1eee7e40895e26ec172e279
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df2967ce46ffb54c8d40f19e8ecfc3c
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed243e017b8c63443bce8e70f5d0d309
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f6723e5f9c37849a5771c2211c6fb2
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f5e6198a687134b933ecc6f425cac7
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f051e54598dd342a641cb1edce08a0
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa3dc67ebd960e4f9ec5981e00ccdc5
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f169fdb4df5f6a740a648febe64a425f
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e24edb451f72d4eb01fc08a12e666a
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5342f1de0a2f9794d9dd5f0ed3a1f5d0
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5cc3ad3d75ff44dbaab04bf235da3a
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f236610ae13e9f4b81c7c015d839055
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffe39f425b429b469b5b2af0a55671b
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5363a53c843b0994c93158a6803921e0
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_29
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a1e2ccd3cceae46b14def7f78ab16d
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_30
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a605ab3d23777fe43b129bc5f35ec9fd
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0722e32e1167b40938f829a34a4e47
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72acb24bfd1e5304191cb6c5ca8869c4
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4a045debdf630449104f4ed624a227
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898f814ba3e42404c85612b7e0da8941
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d590c15f3764146ab3313280de2f1e
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_36
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54005c187dd435948ae2d4015cfbfea2
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fcf57d310ae4e46b019ed76f2d6587
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_38
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d205a44895f254295f10ee7b720e62
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0e3d9fe958d134b914db07c67ef649
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1d7e4adcfca8b4ca370bf52e2416f9
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af6c623137d0a1418f4f973e041edd2
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697353c6133d8b249868087bee308215
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2f6323c4e2ae94eb77b14c2b9d30db
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc83cfb1f29eeb149ad390f564cf411a
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_45
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4aee3e7766de24bbe479f4e8d34a18
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7830c9c32c02ac0468f628e8b5e3835d
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9e4e39c86204047a7cd6ed01cdc92f
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f2e6b46227ba24fbe5834d4077aef4
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a651dc039234c374793bf2af829a3b01
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d211d0fedaccaba4a818cf85b2b52599
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_51
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3036a86fa9734cb42892f77ff5283784
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_52
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb490b09b655f9542a4e3d7564dea65f
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_53
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32644ab7668dc1e49a7a0e2ba200c106
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_54
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4919950d011e349ad5d5242d348d02
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a764c60b467a7e4e9caa3f7ff4453df
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba44946a350afc0419e00dc66cf7a1d4
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_57
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f2c806a5cf69a4bade40812c298471
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2601dc141df9e4b8d7ba7be3b79d3f
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_59
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0de8be09788334cb36c3cdc2daca99
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_60
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba385c2834af9d14e944d4281697b271
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c4627699e0de449ba4a45e49318b52
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_62
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f81c1ee3c462c246a6d905b683c04fb
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5476ae3a02e148479a67145b11d5fb9
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dfe6e4da04a5e4fb81cb4d8b6f3f3d
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_65
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2824c28f81e44534bac81d427c8288ef
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b60132abe24a54980a46ca41e36a16
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc41a274d3364cd40833cbedbf9db0e0
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_68
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3d15af6213d3243a2b5e71c17177b2
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_69
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4380ef5eccc6d8479b61325fbaecea9
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_70
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0151307ed2b6a7447bfc6e203044fa2c
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81fe6309f24345448787b183c75ba92
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ed197e35ec304449645218f953731a
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9f77daa63b6a34f9fe4ce23fe8b174
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_74
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9fd69f8231f8d449db61afa14d6b68
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_75
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65094bcaef45c9f42a5609189dbc045e
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_76
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4fc93e4babe06419961aa1e49ba819
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_77
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543c5c7fe99bd9043809f014cf51183f
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: night_78
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59935fc7cfcc4b41802cd9e63e49a5e
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bfddafdec5fa25d4c8e9509a292a2dfb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,835 @@
+fileFormatVersion: 2
+guid: f9d53d775373f364f8355c311977ea36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -339647226180959417
+    second: HITEFFECT_0
+  - first:
+      213: 7945792237188458709
+    second: HITEFFECT_1
+  - first:
+      213: -8875706290557839068
+    second: HITEFFECT_2
+  - first:
+      213: 3294446801347365554
+    second: HITEFFECT_3
+  - first:
+      213: 8695796522997662160
+    second: HITEFFECT_4
+  - first:
+      213: -4408554853200219007
+    second: HITEFFECT_5
+  - first:
+      213: -4382354148852550582
+    second: HITEFFECT_6
+  - first:
+      213: 5825270669940864806
+    second: HITEFFECT_7
+  - first:
+      213: 4492202345521541850
+    second: HITEFFECT_8
+  - first:
+      213: -2444504160911607740
+    second: HITEFFECT_9
+  - first:
+      213: -6970078049631474138
+    second: HITEFFECT_10
+  - first:
+      213: -3322835290641545502
+    second: HITEFFECT_11
+  - first:
+      213: -7385521841500818913
+    second: HITEFFECT_12
+  - first:
+      213: -7211946796212837378
+    second: HITEFFECT_13
+  - first:
+      213: 7083463047860699948
+    second: HITEFFECT_14
+  - first:
+      213: 1375172062592934444
+    second: HITEFFECT_15
+  - first:
+      213: 3024203822942895278
+    second: HITEFFECT_16
+  - first:
+      213: 1204042436500873125
+    second: HITEFFECT_17
+  - first:
+      213: -8115203404842114064
+    second: HITEFFECT_18
+  - first:
+      213: 2794345612999723654
+    second: HITEFFECT_19
+  - first:
+      213: 1275066701680653614
+    second: HITEFFECT_20
+  - first:
+      213: -4527804855281202421
+    second: HITEFFECT_21
+  - first:
+      213: -4958758100725607851
+    second: HITEFFECT_22
+  - first:
+      213: 1875761608235573361
+    second: HITEFFECT_23
+  - first:
+      213: 5270403556702214066
+    second: HITEFFECT_24
+  - first:
+      213: 5530427387642491405
+    second: HITEFFECT_25
+  - first:
+      213: -2478673685370331130
+    second: HITEFFECT_26
+  - first:
+      213: -2693385533937029171
+    second: HITEFFECT_27
+  - first:
+      213: 5677801998337921255
+    second: HITEFFECT_28
+  - first:
+      213: -341381255376084539
+    second: HITEFFECT_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HITEFFECT_0
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 565
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1180c4349c329ab48b6e513e3f170172
+      internalID: -339647226180959417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 546
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879f011a3b8c5b241bc9c54c84d42b67
+      internalID: 7945792237188458709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 365
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50568ade33d7f8c48b37cbad60d72b76
+      internalID: -8875706290557839068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 361
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8d3f94c16d79a4381c20b53beda348
+      internalID: 3294446801347365554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 430
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846fce3d8f12bfb418c29ba05f3c221c
+      internalID: 8695796522997662160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_5
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 360
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374c7a24a09d27e42b1842c027db4d61
+      internalID: -4408554853200219007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_6
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 430
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a643f8fe5a63e804a8ee43afda4a79b1
+      internalID: -4382354148852550582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_7
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 364
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a0d5218525e294ea3c6b5f59e7d3e5
+      internalID: 5825270669940864806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_8
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 438
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b16613a8eba41a46ab8d71e3c58ae2d
+      internalID: 4492202345521541850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_9
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 359
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06437cb425d4794cbb51c8bb532b6ac
+      internalID: -2444504160911607740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 184
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc08e42a7a68d3459edf239f861f474
+      internalID: -6970078049631474138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 252
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26180c9edfde29a49b34d2be4b8d8189
+      internalID: -3322835290641545502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 184
+        width: 104
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0147eb327db371940b960ceef77551c8
+      internalID: -7385521841500818913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_13
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 252
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7e80c16dcf1c74b8b4132f5999a3fe
+      internalID: -7211946796212837378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_14
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 184
+        width: 106
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4eb9cf2dd99324cbaa6dbccb1034c4
+      internalID: 7083463047860699948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 180
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd63de0765e4f840a20a0d31949f2f4
+      internalID: 1375172062592934444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 176
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4633120cab4a9564c8e625f46bc304b0
+      internalID: 3024203822942895278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 176
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab7d375f1a418447a0c5c8bb7bd9daa
+      internalID: 1204042436500873125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 61
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797aa0005a69fcb4e8b5a1f2fc94d2c8
+      internalID: -8115203404842114064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 36
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d021a6902cd1d3441b91473bba252fc1
+      internalID: 2794345612999723654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_20
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb2f02463f1d47438006ed638d43349
+      internalID: 1275066701680653614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_21
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 29
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b655579b5fe15ee4e9eca9ec944fb91f
+      internalID: -4527804855281202421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c9b7192a18cb14d9f320aa89262944
+      internalID: -4958758100725607851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_23
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 46
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b482d10fa82df94a80ead16cc165158
+      internalID: 1875761608235573361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_24
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 46
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e631613e618d4f54c8da6b85a9a512bf
+      internalID: 5270403556702214066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_25
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 64
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c060b9302497f44b71ccb9578a79f5
+      internalID: 5530427387642491405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_26
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 35
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4654fed1b2a614499493f37e6ae19ca
+      internalID: -2478673685370331130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_27
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0abfcd6516f5b49aa9c5db579a420b
+      internalID: -2693385533937029171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_28
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 45
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dec19b86214e047ab1e2ba4937fb41
+      internalID: 5677801998337921255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HITEFFECT_29
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 21
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d89cde57b4b6ed449430c73e93ec79f
+      internalID: -341381255376084539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
