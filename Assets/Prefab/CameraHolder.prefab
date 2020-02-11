@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 1.42
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4709,7 +4709,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5688,17 +5688,17 @@ PrefabInstance:
     - target: {fileID: 116949018113591837, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 116949018113591838, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.540968
+      value: -3.8751984
       objectReference: {fileID: 0}
     - target: {fileID: 116949018113591838, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0026426315
+      value: -0.0028905869
       objectReference: {fileID: 0}
     - target: {fileID: 116949018113591839, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
@@ -5759,12 +5759,12 @@ PrefabInstance:
     - target: {fileID: 116949018988448641, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.265699
+      value: -13.485523
       objectReference: {fileID: 0}
     - target: {fileID: 116949018988448641, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.06735706
+      value: 0.3328911
       objectReference: {fileID: 0}
     - target: {fileID: 116949018988448641, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
@@ -5819,7 +5819,7 @@ PrefabInstance:
     - target: {fileID: 116949018988448642, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 116949018988448644, guid: 5ad00dbe904ffd5419238c524357af24,
         type: 3}
