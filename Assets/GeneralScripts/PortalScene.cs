@@ -10,6 +10,7 @@ public class PortalScene : MonoBehaviour {
     {
         if(col.gameObject.name.Equals("Character"))
         {
+            PlayerPrefs.SetInt("LevelPassed", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         

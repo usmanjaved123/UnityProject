@@ -6,14 +6,32 @@ using UnityEngine.SceneManagement;
 
 public class StageSelectScript : MonoBehaviour
 {
+    public Button level2button, level3button;
+    int levelPassed;
     // Use this for initialization
     public GameObject LoadingScreen;
     public Slider slider;
-    public void SelectStage1()
+
+    void Start()
     {
-        StartCoroutine("LoadStage1");
+        levelPassed = PlayerPrefs.GetInt("LevelPassed");
+        level2button.interactable = false;
+        level3button.interactable = false;
+        if(levelPassed==1)
+        {
+            level2button.interactable = true;
+        }
+        if (levelPassed == 2)
+        {
+            level2button.interactable = true;
+            level3button.interactable = true;
+        }
     }
-    IEnumerator LoadStage1()
+    public void Selectlevel1()
+    {
+        StartCoroutine("LoadLevel1");
+    }
+    IEnumerator LoadLevel1()
     {
         AsyncOperation operation= SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         LoadingScreen.SetActive(true);
@@ -28,13 +46,56 @@ public class StageSelectScript : MonoBehaviour
         
 
     }
+
+    public void Selectlevel2()
+    {
+        StartCoroutine("LoadLevel2");
+
+    }
+    IEnumerator LoadLevel2()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 2);
+        LoadingScreen.SetActive(true);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+
+            slider.value = progress;
+
+            yield return null;
+        }
+
+
+    }
+
+    public void Selectlevel3()
+    {
+        StartCoroutine("LoadLevel3");
+
+    }
+    IEnumerator LoadLevel3()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 3);
+        LoadingScreen.SetActive(true);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+
+            slider.value = progress;
+
+            yield return null;
+        }
+
+
+    }
     public void GoBack()
     {
         transform.gameObject.SetActive(false);
     }
-    public void SelectStage2()
+    public void Reset()
     {
-        //do nothing now
-
+        level2button.interactable = false;
+        level3button.interactable = false;
+        PlayerPrefs.DeleteAll();
     }
 }
