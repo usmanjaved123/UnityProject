@@ -27,7 +27,7 @@ public class EnemyCollision : MonoBehaviour {
                         script.healthAmount = 0f;
                         script.spawnCollectables();
                     }
-                    script.healthAmount -= 5f;
+                    script.healthAmount -= 50f;
                 }
             }
             else

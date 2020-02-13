@@ -2,13 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField]
     private GameObject ruby, fatalitytext;
     public CameraShake cameraShake;
+    public Image Healthbar;
     public bool IsArmored;
+    public bool IsRanged;
     //camera
     private CinemachineVirtualCamera vcam;
     private CinemachineBasicMultiChannelPerlin noise;
@@ -35,6 +38,7 @@ public class Enemy : MonoBehaviour
     public bool IsDead = false;
     public float dirX;
     public float healthAmount;
+    float maxHealth = 100f;
 
     public bool facingRight = true;
     Vector3 localScale;
@@ -43,6 +47,7 @@ public class Enemy : MonoBehaviour
     public bool PlayerTooClose = false;
     private bool EnemyDead = false;
     Animator anim;
+    public static EnemyHealthBarScript hp;
 
     public float shakeDuration = 0.3f;
     // Use this for initialization
@@ -51,9 +56,10 @@ public class Enemy : MonoBehaviour
         //camerasettings
         vcam = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
         noise = vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        hp = FindObjectOfType<EnemyHealthBarScript>();
 
-        //enemy settings
-        healthAmount = 50;
+        healthAmount = maxHealth;
+
         localScale = transform.localScale;
         rb = this.GetComponent<Rigidbody2D>();
         enemboxcol = GetComponent<Collider2D>();
@@ -72,108 +78,112 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
-        float distanceToTarget = Vector3.Distance(transform.position, player.position);
-        //PlayerDetected = false;
-        //Player Too Close
-        if (distanceToTarget <= 1)
+        Healthbar.fillAmount = healthAmount / maxHealth;
+        if (!IsRanged)
         {
-            PlayerTooClose = true;
-        }
-        else
-        {
-            PlayerTooClose = false;
-        }
-        if (distanceToTarget <= chaseRange && !PlayerDead)
-        {
-            if (!IsAttacking)
+            float distanceToTarget = Vector3.Distance(transform.position, player.position);
+            //PlayerDetected = false;
+            //Player Too Close
+            if (distanceToTarget <= 1)
             {
-
-                //IF PLAYER IS ON THE RIGHT SIDE
-                if (player.position.x > transform.position.x)
-                {
-                    if ((player.localScale.x < 0 && transform.localScale.x < 0) && !PlayerTooClose)
-                    {
-                        //DONT DETECT
-                        anim.SetBool("isRunning", false);
-                        PlayerDetected = false;
-                        AttachFromBehind = true;
-                    }
-                    else
-                    {
-                        transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x, transform.position.y), moveSpeed * Time.deltaTime * 2);
-                        anim.SetBool("isRunning", true);
-                        PlayerDetected = true;
-                        AttachFromBehind = false;
-                    }
-                }
-                //IF PLAYER IS ON THE LEFT SIDE
-                else if (player.position.x < transform.position.x)
+                PlayerTooClose = true;
+            }
+            else
+            {
+                PlayerTooClose = false;
+            }
+            if (distanceToTarget <= chaseRange && !PlayerDead)
+            {
+                if (!IsAttacking)
                 {
 
-                    if ((player.localScale.x > 0 && transform.localScale.x > 0) && !PlayerTooClose)
+                    //IF PLAYER IS ON THE RIGHT SIDE
+                    if (player.position.x > transform.position.x)
                     {
-                        //DONT DETECT
-                        anim.SetBool("isRunning", false);
-                        PlayerDetected = false;
-                        AttachFromBehind = true;
+                        if ((player.localScale.x < 0 && transform.localScale.x < 0) && !PlayerTooClose)
+                        {
+                            //DONT DETECT
+                            anim.SetBool("isRunning", false);
+                            PlayerDetected = false;
+                            AttachFromBehind = true;
+                        }
+                        else
+                        {
+                            transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x, transform.position.y), moveSpeed * Time.deltaTime * 2);
+                            anim.SetBool("isRunning", true);
+                            PlayerDetected = true;
+                            AttachFromBehind = false;
+                        }
                     }
-                    else
+                    //IF PLAYER IS ON THE LEFT SIDE
+                    else if (player.position.x < transform.position.x)
                     {
-                        transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x, transform.position.y), moveSpeed * Time.deltaTime * 2);
-                        anim.SetBool("isRunning", true);
-                        PlayerDetected = true;
-                        AttachFromBehind = false;
+
+                        if ((player.localScale.x > 0 && transform.localScale.x > 0) && !PlayerTooClose)
+                        {
+                            //DONT DETECT
+                            anim.SetBool("isRunning", false);
+                            PlayerDetected = false;
+                            AttachFromBehind = true;
+                        }
+                        else
+                        {
+                            transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x, transform.position.y), moveSpeed * Time.deltaTime * 2);
+                            anim.SetBool("isRunning", true);
+                            PlayerDetected = true;
+                            AttachFromBehind = false;
+                        }
                     }
+
+
+                }
+
+
+                //transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x, transform.position.y), moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+
+                anim.SetBool("isRunning", false);
+                PlayerDetected = false;
+            }
+
+            if (!PlayerDead && !PlayerDetected)
+            {
+                if (transform.position.x < leftboundary)
+                {
+                    dirX = 1f;
+                    anim.SetBool("isWalking", true);
+                }
+                else if (transform.position.x > rightboundary)
+                {
+                    dirX = -1f;
+                    anim.SetBool("isWalking", true);
+                }
+            }
+            if (IsAttacking)
+            {
+                anim.SetBool("isAttacking", true);
+                //anim.SetBool("isWalking", false);
+                anim.SetBool("isRunning", false);
+                if (!PlayerDead)
+                {
+                    Invoke("PlayAttackSound", 0.25f);
                 }
 
 
             }
-
-
-            //transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x, transform.position.y), moveSpeed * Time.deltaTime);
-        }
-        else
-        {
-
-            anim.SetBool("isRunning", false);
-            PlayerDetected = false;
-        }
-
-        if (!PlayerDead && !PlayerDetected)
-        {
-            if (transform.position.x < leftboundary)
+            else
             {
-                dirX = 1f;
-                anim.SetBool("isWalking", true);
+                anim.SetBool("isAttacking", false);
             }
-            else if (transform.position.x > rightboundary)
+            //Check if player is dead
+            if (Player.IsDead)
             {
-                dirX = -1f;
-                anim.SetBool("isWalking", true);
+                anim.SetBool("isWalking", false);
+                anim.SetBool("isAttacking", false);
+                PlayerDead = true;
             }
-        }
-        if (IsAttacking)
-        {
-            anim.SetBool("isAttacking", true);
-            //anim.SetBool("isWalking", false);
-            anim.SetBool("isRunning", false);
-            if(!PlayerDead)
-            {
-                Invoke("PlayAttackSound", 0.25f);
-            }
-            
-
-        }
-        else
-        {
-            anim.SetBool("isAttacking", false);
-        }
-        //Check if player is dead
-        if (Player.IsDead)
-        {
-            anim.SetBool("isWalking", false);
-            anim.SetBool("isAttacking", false);
-            PlayerDead = true;
         }
         //Enemy is Dead
         if (healthAmount <= 0)
@@ -190,7 +200,6 @@ public class Enemy : MonoBehaviour
             anim.Play("Dead_Animation");
            
             PlayerDead = true;
-            Destroy(gameObject, 1.75f);
             Invoke("EnableLayerCollision", 1.5f);
         }
 
@@ -204,138 +213,155 @@ public class Enemy : MonoBehaviour
     }
     private void FixedUpdate()
     {
-
-        if (!IsAttacking && !PlayerDead && !PlayerDetected)
+        if (!IsRanged)
         {
-            //moveCharacter(movement);
-            rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
+            if (!IsAttacking && !PlayerDead && !PlayerDetected)
+            {
+                //moveCharacter(movement);
+                rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = Vector2.zero;
 
+            }
         }
 
     }
     void EnableLayerCollision()
     {
         Physics2D.IgnoreLayerCollision(8, 9, false);
+        Destroy(gameObject);
     }
     void LateUpdate()
     {
-        if (PlayerDetected)
+        if (!IsRanged)
         {
-            //IF PLAYER IS ON THE RIGHT SIDE
-            if (player.position.x > transform.position.x)
+            if (PlayerDetected)
             {
-                if (!facingRight && localScale.x < 0)
+                //IF PLAYER IS ON THE RIGHT SIDE
+                if (player.position.x > transform.position.x)
                 {
-                    localScale.x *= -1;
-                }
+                    if (!facingRight && localScale.x < 0)
+                    {
+                        localScale.x *= -1;
+                    }
 
-                if (localScale.x < 0)
-                {
-                    localScale.x *= -1;
-                }
+                    if (localScale.x < 0)
+                    {
+                        localScale.x *= -1;
+                    }
 
-            }
-            //IF PLAYER IS ON THE LEFT SIDE
-            else if (player.position.x < transform.position.x)
-            {
-                if (facingRight && localScale.x > 0)
-                {
-                    localScale.x *= -1;
                 }
-                if (localScale.x > 0)
+                //IF PLAYER IS ON THE LEFT SIDE
+                else if (player.position.x < transform.position.x)
                 {
-                    localScale.x *= -1;
-                }
+                    if (facingRight && localScale.x > 0)
+                    {
+                        localScale.x *= -1;
+                    }
+                    if (localScale.x > 0)
+                    {
+                        localScale.x *= -1;
+                    }
 
-            }
-            else
-            {
-                //IF PLAYER IS ON TOP OF ENEMY MOVE IT AWAY LEFT/RIGHT
-                if (facingRight)
-                {
-                    transform.position = new Vector2(transform.position.x + 2f, transform.position.y);
                 }
                 else
                 {
-                    transform.position = new Vector2(transform.position.x - 2f, transform.position.y);
+                    //IF PLAYER IS ON TOP OF ENEMY MOVE IT AWAY LEFT/RIGHT
+                    if (facingRight)
+                    {
+                        transform.position = new Vector2(transform.position.x + 2f, transform.position.y);
+                    }
+                    else
+                    {
+                        transform.position = new Vector2(transform.position.x - 2f, transform.position.y);
+                    }
+
+                }
+            }
+            else
+            {
+                if (dirX > 0)
+                {
+                    facingRight = true;
+                }
+                else if (dirX < 0)
+                {
+                    facingRight = false;
                 }
 
-            }
-        }
-        else
-        {
-            if (dirX > 0)
-            {
-                facingRight = true;
-            }
-            else if (dirX < 0)
-            {
-                facingRight = false;
+                if (((facingRight) && (localScale.x < 0)) || ((!facingRight) && (localScale.x > 0)))
+                {
+                    localScale.x *= -1;
+                }
             }
 
-            if (((facingRight) && (localScale.x < 0)) || ((!facingRight) && (localScale.x > 0)))
-            {
-                localScale.x *= -1;
-            }
+            transform.localScale = localScale;
         }
-
-        transform.localScale = localScale;
     }
     void OnTriggerEnter2D(Collider2D col)
     {
         //Check if enemy is attacking
         if (col.gameObject.name.Equals("PlayerHand"))
         {
-            //Show Hit effect
-            Instantiate(HitEffect, transform.position, transform.rotation);
-
-            //add screen shake
-            //StartCoroutine(cameraShake.Shake(0.1f, 1f));
-            StartCoroutine(Noise(2f, 2f, 1f));
-            //HealthBarScript.health += 30f;
-            SpecialMoveScript.SpecialMove += 5f;
-            if (healthAmount != 0)
+            if (!IsRanged)
             {
-                if (AttachFromBehind)
+                //Show Hit effect
+                Instantiate(HitEffect, transform.position, transform.rotation);
+                //add screen shake
+                //StartCoroutine(cameraShake.Shake(0.1f, 1f));
+                StartCoroutine(Noise(2f, 2f, 1f));
+                //HealthBarScript.health += 30f;
+                SpecialMoveScript.SpecialMove += 5f;
+                if (healthAmount != 0)
                 {
-                    healthAmount = 0f;
+                    if (AttachFromBehind)
+                    {
+                        healthAmount = 0f;
+                    }
+                    healthAmount -= Player.AttackDamage;
+
                 }
-                healthAmount -= Player.AttackDamage;
 
-            }
+                if (facingRight)
+                {
+                    rb.AddForce(Vector2.left * 2000);
+                }
+                else
+                {
+                    rb.AddForce(Vector2.right * 2000);
+                }
+                //initiate blood
+                if (healthAmount <= 0)
+                {
+                    //Player death sound
+                    DieSound.Play();
+                    healthAmount = 0f;
+                    Physics2D.IgnoreLayerCollision(8, 9, true);
 
-            if (facingRight)
-            {
-                rb.AddForce(Vector2.left * 2000);
+                    //Show Blood
+                    Instantiate(blood, transform.position, Quaternion.identity);
+
+                    //Drop ruby
+                    Instantiate(ruby, transform.position, Quaternion.identity);
+
+                    //add screen shake
+                    //StartCoroutine(cameraShake.Shake(0.125f, 1f));
+                    StartCoroutine(Noise(2f, 2f, 1f));
+
+                }
+                IsAttacking = false;
             }
             else
             {
-                rb.AddForce(Vector2.right * 2000);
-            }
-            //initiate blood
-            if (healthAmount <= 0)
-            {
-                //Player death sound
-                DieSound.Play();
-                healthAmount = 0;
-                Physics2D.IgnoreLayerCollision(8, 9, true);
-               
-                //Show Blood
-                Instantiate(blood, transform.position, Quaternion.identity);
-
-                //Drop ruby
-                Instantiate(ruby, transform.position, Quaternion.identity);
-
+                //Show Hit effect
+                Instantiate(HitEffect, transform.position, transform.rotation);
                 //add screen shake
-                //StartCoroutine(cameraShake.Shake(0.125f, 1f));
+                //StartCoroutine(cameraShake.Shake(0.1f, 1f));
                 StartCoroutine(Noise(2f, 2f, 1f));
-
+                healthAmount -= Player.AttackDamage * 2;
             }
-            IsAttacking = false;
         }
     }
     public void spawnCollectables()
