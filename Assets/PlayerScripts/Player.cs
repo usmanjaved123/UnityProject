@@ -416,7 +416,7 @@ public class Player : MonoBehaviour
                 anim.SetBool("IsThrowing", true);
                 if (!KunaiFinished)
                 {
-                    var firedkunai = Instantiate(kunai, barrel.position, barrel.rotation);
+                    var firedkunai = Instantiate(kunai, barrel.position, Quaternion.identity);
                     firedkunai.AddForce(barrel.up * throwspeed);
                     KunaiSystem.TakeLife();
                     ThrowSound.Play();

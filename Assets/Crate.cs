@@ -45,7 +45,7 @@ public class Crate : MonoBehaviour {
             anim.SetTrigger("CrateHit");
             hitcount -= 1;
         }
-        if (col.CompareTag("Kunai"))
+        if (col.CompareTag("FireArrow"))
         {
             breaksound.Play();
             anim.SetTrigger("CrateHit");

@@ -2,41 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCollision : MonoBehaviour {
+public class EnemyCollision : MonoBehaviour
+{
 
-
+    //ENEMY KUNAI COLLISION WITH PLAYER SCRIPT
     public GameObject WallCloud;
     void OnTriggerEnter2D(Collider2D col)
     {
         //Check if enemy is attacking
-        if (col.CompareTag("Enemy"))
+        if (col.CompareTag("Player"))
         {
             var parentname = col.gameObject.transform.root.gameObject.name;
-            Enemy script = GameObject.Find(parentname).GetComponent<Enemy>();
+            Player script = GameObject.Find(parentname).GetComponent<Player>();
             //IF ENEMY IS ARMORED NO KUNAI DAMAGE
-            if(script.IsArmored==false)
+            if (HealthBarScript.health <= 0)
             {
-                if (script.healthAmount <= 0)
-                {
-                    //do nothing
-                }
-                else
-                {
-                    if (script.AttachFromBehind)
-                    {
-                        script.healthAmount = 0f;
-                        script.spawnCollectables();
-                    }
-                    script.healthAmount -= 50f;
-                }
+                //do nothing
             }
             else
             {
-                Instantiate(WallCloud, transform.position, Quaternion.identity);
-                Destroy(gameObject);
-            }
-            
 
+                HealthBarScript.health -= 10f;
+            }
 
             Destroy(gameObject);
         }
@@ -45,7 +32,7 @@ public class EnemyCollision : MonoBehaviour {
             Instantiate(WallCloud, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        if (col.CompareTag("BreakWall"))
+        if (col.CompareTag("FireArrow"))
         {
             Instantiate(WallCloud, transform.position, Quaternion.identity);
             Destroy(col.gameObject);

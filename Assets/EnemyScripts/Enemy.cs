@@ -8,6 +8,10 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField]
     private GameObject ruby, fatalitytext;
+    [SerializeField]
+    public Transform barrel;
+    public Rigidbody2D fire;
+    public float throwspeed = 500f;
     public CameraShake cameraShake;
     public Image Healthbar;
     public bool IsArmored;
@@ -15,6 +19,8 @@ public class Enemy : MonoBehaviour
     //camera
     private CinemachineVirtualCamera vcam;
     private CinemachineBasicMultiChannelPerlin noise;
+
+  
 
     public Transform player;
     public float chaseRange;
@@ -185,6 +191,10 @@ public class Enemy : MonoBehaviour
                 PlayerDead = true;
             }
         }
+        else
+        {
+            
+        }
         //Enemy is Dead
         if (healthAmount <= 0)
         {
@@ -203,6 +213,12 @@ public class Enemy : MonoBehaviour
             Invoke("EnableLayerCollision", 1.5f);
         }
 
+    }
+    public IEnumerator Throw()
+    {
+        var firedkunai = Instantiate(fire, barrel.position, barrel.rotation);
+        firedkunai.AddForce(barrel.up * throwspeed);
+         yield return new WaitForSeconds(2f);
     }
     public IEnumerator Noise(float amplitudeGain, float frequencyGain, float ShakeDuration)
     {
