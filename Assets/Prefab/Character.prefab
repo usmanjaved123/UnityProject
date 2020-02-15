@@ -62,6 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dustCloud: {fileID: 1631761536878772, guid: b90559f78fcfbeb44a4f037b5f3416df, type: 3}
   cameraShake: {fileID: 0}
+  player: {fileID: 1635787127517866}
 --- !u!1 &1472093886185234
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +310,7 @@ MonoBehaviour:
   DashSpeed: 2500
   facingRight: 1
   barrel: {fileID: 4179365632047588}
-  kunai: {fileID: 50928149739032070, guid: f2ea9266c05e3504daa6707972a9ad0b, type: 3}
+  kunai: {fileID: 7619217106486061919, guid: f6043e661cfcce14280534085aed7b44, type: 3}
   gameOverUI: {fileID: 0}
   HitEffect: {fileID: 5112589692487932262, guid: 842366ecadd6e79438eb828246e4d396,
     type: 3}

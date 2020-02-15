@@ -177,4 +177,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700acce82fd04d846b2e074e64afefca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WallCloud: {fileID: 1631761536878772, guid: 0a5808dd8c1e2b34198124d13c2e92d9, type: 3}
+  WallCloud: {fileID: 5112589692487932262, guid: 842366ecadd6e79438eb828246e4d396,
+    type: 3}

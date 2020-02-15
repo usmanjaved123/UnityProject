@@ -208,6 +208,10 @@ public class Enemy : MonoBehaviour
                 EnemyDead = true;
             }
             anim.Play("Dead_Animation");
+            if(IsRanged)
+            {
+                spawnCollectables();
+            }
            
             PlayerDead = true;
             Invoke("EnableLayerCollision", 1.5f);

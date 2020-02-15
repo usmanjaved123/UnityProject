@@ -121,6 +121,7 @@ public class Player : MonoBehaviour
         LifeSystem = FindObjectOfType<LiveCounterScript>();
         KunaiSystem = FindObjectOfType<KunaiCounterScript>();
         KunaiSystem.Kunai = 10;
+        KunaiFinished = false;
         sounds = GetComponents<AudioSource>();
 
         StepSound = sounds[0];
