@@ -57,6 +57,7 @@ public class Enemy : MonoBehaviour
 
     public float shakeDuration = 0.3f;
     // Use this for initialization
+    bool spawncheck = false;
     void Start()
     {
         //camerasettings
@@ -193,7 +194,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            
+            //ranged do nothing
         }
         //Enemy is Dead
         if (healthAmount <= 0)
@@ -203,16 +204,19 @@ public class Enemy : MonoBehaviour
             if (!EnemyDead)
             {
                 //add screen shake
-                //StartCoroutine(cameraShake.Shake(0.125f, 1f));
                 StartCoroutine(Noise(2f, 2f, 1f));
                 EnemyDead = true;
             }
-            anim.Play("Dead_Animation");
             if(IsRanged)
             {
-                spawnCollectables();
+                if(!spawncheck)
+                {
+                    spawnCollectablesForRanged();
+                    spawncheck = true;
+                }
+
             }
-           
+            anim.Play("Dead_Animation");
             PlayerDead = true;
             Invoke("EnableLayerCollision", 1.5f);
         }
@@ -364,7 +368,7 @@ public class Enemy : MonoBehaviour
                     Instantiate(blood, transform.position, Quaternion.identity);
 
                     //Drop ruby
-                    Instantiate(ruby, transform.position, Quaternion.identity);
+                    Instantiate(ruby, transform.position + new Vector3(0f, 1f, 0f), Quaternion.identity);
 
                     //add screen shake
                     //StartCoroutine(cameraShake.Shake(0.125f, 1f));
@@ -377,10 +381,32 @@ public class Enemy : MonoBehaviour
             {
                 //Show Hit effect
                 Instantiate(HitEffect, transform.position, transform.rotation);
+                
                 //add screen shake
-                //StartCoroutine(cameraShake.Shake(0.1f, 1f));
                 StartCoroutine(Noise(2f, 2f, 1f));
-                healthAmount -= Player.AttackDamage * 2;
+                if (healthAmount != 0)
+                {
+                    healthAmount -= Player.AttackDamage * 2;
+                }
+                //initiate blood
+                if (healthAmount <= 0)
+                {
+                    //Player death sound
+                    DieSound.Play();
+                    healthAmount = 0f;
+                    Physics2D.IgnoreLayerCollision(8, 9, true);
+
+                    //Show Blood
+                    Instantiate(blood, transform.position, Quaternion.identity);
+
+                    //Drop ruby
+                    Instantiate(ruby, transform.position, Quaternion.identity);
+
+                    //add screen shake
+                    //StartCoroutine(cameraShake.Shake(0.125f, 1f));
+                    StartCoroutine(Noise(2f, 2f, 1f));
+
+                }
             }
         }
     }
@@ -398,11 +424,18 @@ public class Enemy : MonoBehaviour
         Instantiate(fatalitytext, transform.position+new Vector3(0f,2f,0f), Quaternion.identity);
 
         //Drop ruby
-        Instantiate(ruby, transform.position, Quaternion.identity);
+        Instantiate(ruby, transform.position + new Vector3(0f, 1f, 0f), Quaternion.identity);
 
         //add screen shake
         //StartCoroutine(cameraShake.Shake(0.125f, 1f));
         StartCoroutine(Noise(2f, 2f, 1f));
+    }
+    private void spawnCollectablesForRanged()
+    {
+        //Show Blood
+        Instantiate(blood, transform.position, Quaternion.identity);
+        //Drop ruby
+        Instantiate(ruby, transform.position, Quaternion.identity);
     }
     private void PlayAttackSound()
     {

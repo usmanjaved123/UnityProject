@@ -460,9 +460,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a50df915dd00f4d8de389a8fe40a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ruby: {fileID: 1026888378046974, guid: 97cb6f19c2b0b0d43844025c32397b59, type: 3}
+  ruby: {fileID: 2624749242178241554, guid: ed5ea163d3d0cfa47a9a18aeac12dd84, type: 3}
   fatalitytext: {fileID: 4887363376704327201, guid: 4ddee85917b4cf644bbb658d3b028978,
     type: 3}
+  barrel: {fileID: 0}
+  fire: {fileID: 0}
+  throwspeed: 500
   cameraShake: {fileID: 0}
   Healthbar: {fileID: 8443888241536258005}
   IsArmored: 1
