@@ -88,6 +88,26 @@ public class StageSelectScript : MonoBehaviour
 
 
     }
+    public void Selectlevel4()
+    {
+        StartCoroutine("LoadLevel4");
+
+    }
+    IEnumerator LoadLevel4()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 4);
+        LoadingScreen.SetActive(true);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+
+            slider.value = progress;
+
+            yield return null;
+        }
+
+
+    }
     public void GoBack()
     {
         transform.gameObject.SetActive(false);
