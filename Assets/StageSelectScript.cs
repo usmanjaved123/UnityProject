@@ -27,13 +27,13 @@ public class StageSelectScript : MonoBehaviour
             level3button.interactable = true;
         }
     }
-    public void Selectlevel1()
+    public void Selectlevel(int id)
     {
-        StartCoroutine("LoadLevel1");
+        StartCoroutine("LoadLevel",id);
     }
-    IEnumerator LoadLevel1()
+    IEnumerator LoadLevel(int id)
     {
-        AsyncOperation operation= SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        AsyncOperation operation= SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + id);
         LoadingScreen.SetActive(true);
         while(!operation.isDone)
         {
@@ -47,67 +47,6 @@ public class StageSelectScript : MonoBehaviour
 
     }
 
-    public void Selectlevel2()
-    {
-        StartCoroutine("LoadLevel2");
-
-    }
-    IEnumerator LoadLevel2()
-    {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 2);
-        LoadingScreen.SetActive(true);
-        while (!operation.isDone)
-        {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
-
-            slider.value = progress;
-
-            yield return null;
-        }
-
-
-    }
-
-    public void Selectlevel3()
-    {
-        StartCoroutine("LoadLevel3");
-
-    }
-    IEnumerator LoadLevel3()
-    {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 3);
-        LoadingScreen.SetActive(true);
-        while (!operation.isDone)
-        {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
-
-            slider.value = progress;
-
-            yield return null;
-        }
-
-
-    }
-    public void Selectlevel4()
-    {
-        StartCoroutine("LoadLevel4");
-
-    }
-    IEnumerator LoadLevel4()
-    {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 4);
-        LoadingScreen.SetActive(true);
-        while (!operation.isDone)
-        {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
-
-            slider.value = progress;
-
-            yield return null;
-        }
-
-
-    }
     public void GoBack()
     {
         transform.gameObject.SetActive(false);
