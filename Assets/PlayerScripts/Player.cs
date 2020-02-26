@@ -507,7 +507,7 @@ public class Player : MonoBehaviour
     }
     public void Respawn()
     {
-        transform.position = spawnPoint.position;
+        transform.position = spawnPoint.position + new Vector3(2f, 0f, 0f);
         IsDead = false;
         takelife = false;
         anim.SetTrigger("IsIdle");
