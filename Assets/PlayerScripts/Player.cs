@@ -11,6 +11,9 @@ using System;
 
 public class Player : MonoBehaviour
 {
+    Material material;
+    bool isDissolving = false;
+    float fade = 1f;
     private CinemachineVirtualCamera vcam;
     private CinemachineBasicMultiChannelPerlin noise;
     public CameraShake cameraShake;
@@ -52,6 +55,8 @@ public class Player : MonoBehaviour
     public bool facingRight = true;
     bool CandoubleJump;
     public static bool IsDead = false;
+    public static bool GameOver = false;
+    bool respawnonce;
     Vector3 localScale;
 
     public Transform barrel;
@@ -92,7 +97,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         //Load data
-        if(SaveSystem.FileExits())
+        if (SaveSystem.FileExits())
         {
             PlayerData data = SaveSystem.LoadRubies();
             if (data.Dashcooldown != 0)
@@ -100,11 +105,8 @@ public class Player : MonoBehaviour
                 dashcooldown = data.Dashcooldown;
             }
         }
-        
-        
-
-
-
+        GameOver = false;
+        respawnonce = false;
         // Make the game run as fast as possible
         Application.targetFrameRate = 60;
         //camerasettings
@@ -123,6 +125,7 @@ public class Player : MonoBehaviour
         KunaiSystem.Kunai = 10;
         KunaiFinished = false;
         sounds = GetComponents<AudioSource>();
+        material = GetComponent<SpriteRenderer>().material;
 
         StepSound = sounds[0];
         AttackSound = sounds[1];
@@ -147,8 +150,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
         //Run
         Run();
         //Check if dashing
@@ -179,7 +180,10 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(dirX * movespeed, rb.velocity.y);
+        if (!IsDead)
+        {
+            rb.velocity = new Vector2(dirX * movespeed, rb.velocity.y);
+        }
 
     }
     private void LateUpdate()
@@ -271,12 +275,15 @@ public class Player : MonoBehaviour
             //StepSound.Play();
 
         }
-        
+
         //Running Animation
         if (Mathf.Abs(dirX) > 0 || Mathf.Abs(dirX) > 0)
         {
-            anim.SetBool("IsRunning", true);
-            isMoving = true;
+            if (!IsDead)
+            {
+                anim.SetBool("IsRunning", true);
+                isMoving = true;
+            }
             //StepSound.Play();
         }
         else
@@ -285,9 +292,9 @@ public class Player : MonoBehaviour
             isMoving = false;
             //StepSound.Stop();
         }
-        if(isMoving && rb.velocity.y==0)
+        if (isMoving && rb.velocity.y == 0)
         {
-            if(!StepSound.isPlaying)
+            if (!StepSound.isPlaying)
             {
                 StepSound.Play();
             }
@@ -300,11 +307,11 @@ public class Player : MonoBehaviour
     }
     private void CheckAttack()
     {
-        if(attackcooldowntimer>0)
+        if (attackcooldowntimer > 0)
         {
             attackcooldowntimer -= Time.deltaTime;
         }
-        if(attackcooldowntimer < 0)
+        if (attackcooldowntimer < 0)
         {
             attackcooldowntimer = 0;
         }
@@ -313,10 +320,10 @@ public class Player : MonoBehaviour
     private void Attack()
     {
         //Attack Animation
-        if (CrossPlatformInputManager.GetButtonDown("Attack") && attackcooldowntimer==0)
+        if (CrossPlatformInputManager.GetButtonDown("Attack") && attackcooldowntimer == 0)
         {
             //If jumping
-            if(rb.velocity.y>0)
+            if (rb.velocity.y > 0)
             {
                 attackcooldowntimer = attackcooldown;
                 anim.SetBool("IsAttacking", true);
@@ -366,7 +373,7 @@ public class Player : MonoBehaviour
                     CandoubleJump = false;
                     JumpSound.Play();
                     rb.velocity = new Vector2(rb.velocity.x, 0);
-                    rb.velocity += Vector2.up * jumpforce;
+                    rb.velocity += Vector2.up * jumpforce*1.25f;
                     //rb.AddForce(Vector2.up * jumpforce);
                     Instantiate(dustCloud, transform.position, Quaternion.identity);
                     //add screen shake
@@ -436,8 +443,8 @@ public class Player : MonoBehaviour
         {
             if (Time.time >= (lastdash + dashcooldown))
                 AttemptToDash();
-          
-             
+
+
         }
         if (IsDashing)
         {
@@ -505,15 +512,37 @@ public class Player : MonoBehaviour
         }
 
     }
-    public void Respawn()
+    public IEnumerator Respawn()
     {
-        transform.position = spawnPoint.position + new Vector3(2f, 0f, 0f);
-        IsDead = false;
-        takelife = false;
-        anim.SetTrigger("IsIdle");
-        HealthBarScript.health = 100f;
-        healthAmount = 100f;
-        Physics2D.IgnoreLayerCollision(8, 9, false);
+        // DISSOLVE EFFECT
+        fade -= Time.deltaTime / 2f;
+        if (fade <= 0f)
+        {
+            fade = 0f;
+        }
+        material.SetFloat("_Fade", fade);
+
+        yield return new WaitForSeconds(2f);
+
+        if (!respawnonce)
+        {
+
+            Debug.Log("Respawned man wtf");
+            IsDead = false;
+            takelife = false;
+            anim.SetTrigger("IsIdle");
+            HealthBarScript.health = 100f;
+            healthAmount = 100f;
+            Physics2D.IgnoreLayerCollision(8, 9, false);
+            fade = 1f;
+            material.SetFloat("_Fade", fade);
+            transform.position = spawnPoint.position;
+
+        }
+        respawnonce = true;
+
+
+
     }
     private void PlayerDeath()
     {
@@ -522,8 +551,11 @@ public class Player : MonoBehaviour
         if (HealthBarScript.health <= 0)
         {
             //GAME OVER
-            if(!takelife)
+            if (!takelife)
             {
+                //Debug.Log("IS DEAD");
+                //check if respawn is not called multiple times
+                respawnonce = false;
                 anim.SetTrigger("IsDead");
                 LifeSystem.TakeLife();
                 DeathMusic.Play();
@@ -533,7 +565,11 @@ public class Player : MonoBehaviour
             }
 
             takelife = true;
-            Invoke("Respawn", 3f);
+            if (!GameOver)
+            {
+                //Invoke("Respawn", 1f);
+                StartCoroutine(Respawn());
+            }
             //Respawn();
 
         }
@@ -543,7 +579,7 @@ public class Player : MonoBehaviour
     {
         SaveSystem.SaveRubies();
     }
-   
+
     IEnumerator Boost(float boostDur) //Coroutine with a single input of a float called boostDur, which we can feed a number when calling
     {
         float time = 0; //create float to store the time this coroutine is operating
@@ -567,5 +603,5 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(boostCooldown); //Cooldown time for being able to boost again, if you'd like.
         canBoost = true; //set back to true so that we can boost again.
     }
-    
+
 }

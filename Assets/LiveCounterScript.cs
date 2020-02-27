@@ -26,6 +26,7 @@ public class LiveCounterScript : MonoBehaviour {
 
             RubyCounterScript.Rubies = 0;
             Player.IsDead = true;
+            Player.GameOver = true;
             Player.rb.velocity = Vector2.zero;
             gameOverUI.SetActive(true);
 

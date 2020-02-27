@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: c0f2a98361222014b86e8e014d06d3a8,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -30348,12 +30348,12 @@ PrefabInstance:
     - target: {fileID: 2690223663722607673, guid: e868daa9536282b49901a7993873a90e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.468504
+      value: -13.476746
       objectReference: {fileID: 0}
     - target: {fileID: 2690223663722607673, guid: e868daa9536282b49901a7993873a90e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.33290255
+      value: 0.33289778
       objectReference: {fileID: 0}
     - target: {fileID: 2690223664054924709, guid: e868daa9536282b49901a7993873a90e,
         type: 3}
@@ -30363,12 +30363,12 @@ PrefabInstance:
     - target: {fileID: 2690223664054924710, guid: e868daa9536282b49901a7993873a90e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.888813
+      value: -3.8822212
       objectReference: {fileID: 0}
     - target: {fileID: 2690223664054924710, guid: e868daa9536282b49901a7993873a90e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.002902031
+      value: -0.0028972626
       objectReference: {fileID: 0}
     - target: {fileID: 2690223664527710808, guid: e868daa9536282b49901a7993873a90e,
         type: 3}
@@ -32735,10 +32735,60 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255393, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255393, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255393, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255394, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255394, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255394, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255394, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255395, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255395, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2650605567166255581, guid: 2ee3d33220ea0ff4aaa82afcac775882,
         type: 3}
       propertyPath: m_Name
       value: GameOverCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650605567166255581, guid: 2ee3d33220ea0ff4aaa82afcac775882,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ee3d33220ea0ff4aaa82afcac775882, type: 3}

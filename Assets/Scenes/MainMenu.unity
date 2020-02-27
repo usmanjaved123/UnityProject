@@ -2444,6 +2444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89085fa62ad6a24b8ecac798c9993ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashbutton1: {fileID: 2381893}
+  dashbutton2: {fileID: 820340700}
+  dashbutton3: {fileID: 1977554040}
   DashPanel: {fileID: 1052962638}
   KunaiPanel: {fileID: 56341117}
   AttackPanel: {fileID: 1716396952}
