@@ -96,6 +96,8 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        // Make the game run as fast as possible
+        Application.targetFrameRate = 60;
         //Load data
         if (SaveSystem.FileExits())
         {
@@ -323,13 +325,7 @@ public class Player : MonoBehaviour
         if (CrossPlatformInputManager.GetButtonDown("Attack") && attackcooldowntimer == 0)
         {
             //If jumping
-            if (rb.velocity.y > 0)
-            {
-                attackcooldowntimer = attackcooldown;
-                anim.SetBool("IsAttacking", true);
-                Invoke("PlayAttackSound", 0.25f);
-
-            }
+            
             attackcooldowntimer = attackcooldown;
             anim.SetBool("IsAttacking", true);
             Invoke("PlayAttackSound", 0.25f);
@@ -349,16 +345,17 @@ public class Player : MonoBehaviour
     private void Jump()
     {
         //Jump Character
-        if (rb.velocity.y == 0 || OnPlatform)
-        {
-            CandoubleJump = true;
-        }
+       
         if (CrossPlatformInputManager.GetButtonDown("Jump") && !IsDead)
         {
+            
             //JumpSound.Play();
             //if on ground
             if (rb.velocity.y == 0 || OnPlatform)
             {
+                Debug.Log("SINGLE JUMP");
+                Debug.Log(rb.velocity.y);
+                CandoubleJump = true;
                 JumpSound.Play();
                 //rb.AddForce(Vector2.up * jumpforce);
                 rb.velocity = new Vector2(rb.velocity.x, 0);
@@ -369,6 +366,8 @@ public class Player : MonoBehaviour
             {
                 if (CandoubleJump)
                 {
+                    Debug.Log("DOUBLE JUMP");
+                    Debug.Log(rb.velocity.y);
                     anim.SetBool("IsDoubleJumping", true);
                     CandoubleJump = false;
                     JumpSound.Play();
