@@ -93,6 +93,10 @@ public class Player : MonoBehaviour
     float throwcooldowntimer;
     float throwcooldown = 0.5f;
 
+    //hangtime
+    public float hangtime = 0.2f;
+    private float hangCounter;
+
     // Use this for initialization
     void Start()
     {
@@ -344,6 +348,15 @@ public class Player : MonoBehaviour
     }
     private void Jump()
     {
+        //hangtime
+        if(rb.velocity.y==0)
+        {
+            hangCounter = hangtime;
+        }
+        else
+        {
+            hangCounter -= Time.deltaTime;
+        }
         //Jump Character
        
         if (CrossPlatformInputManager.GetButtonDown("Jump") && !IsDead)
@@ -353,14 +366,18 @@ public class Player : MonoBehaviour
             //if on ground
             if (rb.velocity.y == 0 || OnPlatform)
             {
-                Debug.Log("SINGLE JUMP");
-                Debug.Log(rb.velocity.y);
-                CandoubleJump = true;
-                JumpSound.Play();
-                //rb.AddForce(Vector2.up * jumpforce);
-                rb.velocity = new Vector2(rb.velocity.x, 0);
-                rb.velocity += Vector2.up * jumpforce;
-                Instantiate(dustCloud, transform.position, Quaternion.identity);
+                if(hangCounter > 0f)
+                {
+                    Debug.Log("SINGLE JUMP");
+                    Debug.Log(rb.velocity.y);
+                    CandoubleJump = true;
+                    JumpSound.Play();
+                    //rb.AddForce(Vector2.up * jumpforce);
+                    rb.velocity = new Vector2(rb.velocity.x, 0);
+                    rb.velocity += Vector2.up * jumpforce;
+                    Instantiate(dustCloud, transform.position, Quaternion.identity);
+                }
+                
             }
             else
             {

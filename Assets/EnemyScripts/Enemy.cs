@@ -212,6 +212,8 @@ public class Enemy : MonoBehaviour
                 if(!spawncheck)
                 {
                     spawnCollectablesForRanged();
+
+                    Physics2D.IgnoreLayerCollision(8, 9, true);
                     spawncheck = true;
                 }
 
@@ -432,10 +434,16 @@ public class Enemy : MonoBehaviour
     }
     private void spawnCollectablesForRanged()
     {
+         
         //Show Blood
         Instantiate(blood, transform.position, Quaternion.identity);
+
         //Drop ruby
-        Instantiate(ruby, transform.position, Quaternion.identity);
+        Instantiate(ruby, transform.position + new Vector3(0f, 1f, 0f), Quaternion.identity);
+
+        //add screen shake
+        //StartCoroutine(cameraShake.Shake(0.125f, 1f));
+        StartCoroutine(Noise(2f, 2f, 1f));
     }
     private void PlayAttackSound()
     {

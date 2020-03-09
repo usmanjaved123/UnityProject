@@ -402,7 +402,7 @@ MonoBehaviour:
   Healthbar: {fileID: 4302652567666810719}
   IsArmored: 0
   IsRanged: 0
-  player: {fileID: 0}
+  player: {fileID: 4930804302048806, guid: 59dae3ca8e7c01d4fb0dfe2663892546, type: 3}
   chaseRange: 3
   blood: {fileID: 1309565812179160, guid: 3dd965a250612ed47991a723faf4075e, type: 3}
   HitEffect: {fileID: 5112589692487932262, guid: 842366ecadd6e79438eb828246e4d396,

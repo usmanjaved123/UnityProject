@@ -319,6 +319,7 @@ MonoBehaviour:
   dashtime: 0.2
   distancebetweenimages: 0.5
   DashCooldownImage: {fileID: 0}
+  hangtime: 0.2
 --- !u!50 &50102361656355358
 Rigidbody2D:
   serializedVersion: 4
@@ -332,7 +333,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.1
   m_GravityScale: 2.5
   m_Material: {fileID: 0}
@@ -390,7 +391,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 13d093e9ab553694c92542aeb0f799c6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
