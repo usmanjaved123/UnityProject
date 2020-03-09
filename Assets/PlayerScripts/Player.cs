@@ -571,6 +571,7 @@ public class Player : MonoBehaviour
             {
                 //Debug.Log("IS DEAD");
                 //check if respawn is not called multiple times
+                IsDead = true;
                 respawnonce = false;
                 anim.SetTrigger("IsDead");
                 LifeSystem.TakeLife();
